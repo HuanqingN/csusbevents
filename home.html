@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSUSB Events</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="button.js"></script>
+</head>
+<body>
+
+<div class="container p-3 my-3 bg-dark text-white">
+  <h1 style="text-align:center">CSUSB Events</h1>
+  <p style="text-align:center">Check out the schedule of amazing events happening on campus!.</p>
+</div>
+
+<div class="container">
+    <h2 style="text-align:center">Log in</h1>
+</div>
+
+<form action="/action_page.php">
+    <div class="form-group">
+      <label for="user id">User ID:</label>
+      <input type="text" class="form-control" placeholder="Enter user id" id="userid">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+    </div>
+    <!-- <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox"> Remember me
+      </label>
+    </div> -->
+    <p>Login as:
+        <label class="radio-inline"><input type="radio" name="optradio" checked>student</label>
+        <label class="radio-inline"><input type="radio" name="optradio">faculty</label>
+    </p>
+    <div class="form-group">
+     <button id="submit" type="button" class="btn btn-primary" onclick='on_submit()';>Submit</button>
+    </div>
+</form> 
+    <p id="submitted">12</p>
+
+<!-- <script>
+function on_submit(){
+    // var userid, pwd;
+    // userid = document.getElementById("userid");
+    // pwd = document.getElementById("pwd");
+    document.getElementById("submitted").innerHTML="submitted";
+}
+</script> -->
+
+</body>
+</html> 
